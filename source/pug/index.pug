@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru-RU")
+  head
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title  Интернет-магазин Тортиков
+    link(rel="stylesheet", href="../../build/css/style.css")
+  body
+    header
+      nav
+        div
+          a(href="#")
+            img(src="../img/Cakes.jpg", alt="Лого интернет магазина тортиков")
+        ul
+          -  const listOfNavItems = ["Наши торты", "Индивидуальный заказ", "отзывы", "о нас", "плашка как заказать", "контакты"]
+          each item in listOfNavItems
+            li= item
+    main
+      h1 Торты  на заказ
+      p Ручная работа
+      button Выбрать торт
+      ul
+        li Натуральные ингредиенты
+        li Доставка бесплатно при заказе от 2000 рублей*
+      section
+        h2 Наши торты
+    footer
