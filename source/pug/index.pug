@@ -1,44 +1,8 @@
+include ./main/variable.pug
 doctype html
 html(lang="ru-RU")
-  include ./layout/head.pug
+  include ./head/head.pug
   body
-    include ./layout/header.pug
-    main
-      h1 Торты  на заказ
-      p Ручная работа
-      button Выбрать торт
-      ul
-        li Натуральные ингредиенты
-        li Доставка бесплатно при заказе от 2000 рублей*
-      section
-        h2 Наши торты
-        article
-          h3 Классические
-          p 24 вида
-          img(src="", alt="")
-          a(href="#") Смотреть
-        article
-          h3 Муссовые
-          p 12 вида
-          img(src="", alt="")
-          a(href="#") Смотрет
-        article
-          h3 Свадебные
-          p 20 вида
-          img(src="", alt="")
-          a(href="#") Смотреть
-        article
-          h3 Мужчинам
-          p 16 вида
-          a(href="#") Смотреть
-        article
-          h3 Женщинам
-          p 18 вида
-          img(src="", alt="")
-          a(href="#") Смотреть
-        article
-          h3 Детские
-          p 14 вида
-          img(src="", alt="")
-          a(href="#") Смотреть
-    include ./layout/footer.pug
+    include ./header/header.pug
+    include ./main/main.pug 
+    include ./footer/footer.pug

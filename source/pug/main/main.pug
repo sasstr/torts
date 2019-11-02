@@ -1,0 +1,51 @@
+include mixins.pug
+include variable.pug
+main
+  h1 Торты  на заказ
+  p Ручная работа
+  button Выбрать торт
+  ul
+    each feture in fetures
+      li= feture
+  section
+    h2 Наши торты
+    each cakeType in typeOfCakes
+      +articleCake(...cakeType)
+  section
+    h2 Индивидуальный заказ
+    p Соберите торт в 3 шага
+    ul
+      li
+        div 01
+        h3 Выберите начинку
+        div
+          .slider
+            img(src="#", alt="Тортик")
+            h3 Шоколадный ганаш
+            p Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!
+            div 1000 руб/кг
+            button Выбрать
+          span 1/12
+      li
+        span 02
+        h3 Размер
+        each cakeSize in sizeOfCakes
+          +sizeOfCakes(...cakeSize)
+      li
+        span 03
+        h3 Оформление
+        .slider
+          .cake
+            img(src="#", alt="Тортик")
+            h3 Ягодное ассорти
+            div 700 руб/кг
+          .cake
+            img(src="#", alt="Тортик")
+            h3 Маршмэллоу
+            div 600 руб/кг
+          span 2/35
+          form
+            label
+              input
+
+          button заказать торт

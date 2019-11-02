@@ -1,0 +1,14 @@
+mixin sizeOfCakes(weight, imgSourse= "#", imgAlt= "Тортик", title)
+  div
+    div= weight
+      | кг
+      img(src=imgSourse, alt=imgAlt)
+    p= title
+
+mixin articleCake(typeOfCakes, numberOfTypes, sourceImage, altImage, linkHref, linkTitle='')
+  article
+    h3= typeOfCakes
+    p= numberOfTypes
+      | вида
+    img(src=sourceImage, alt=altImage)
+    a(href=linkHref)= linkTitle

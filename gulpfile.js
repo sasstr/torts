@@ -34,7 +34,7 @@ gulp.task("css", function () {
 });
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('source/pug/*.pug')
+  return gulp.src('source/pug/**/*.pug')
   .pipe(pug({
     pretty: true // Форматирует для удобочитаймости
   }))
