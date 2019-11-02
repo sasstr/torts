@@ -1,16 +1,21 @@
-footer
-  nav
-    div
-      a(href="#")
-        img(src="../img/Cakes.jpg", alt="Лого интернет магазина тортиков")
-    ul
-      -  const listOfFooterNavItems = ["Наши торты", "Индивидуальный заказ", "отзывы", "о нас", "плашка как заказать", "контакты"]
-      each item in listOfFooterNavItems
-        li= item
-    div
-      ul
-        li
-          span Инстаграмм
-        li
-          span ВКонтакте
-    p ©  2018 Cakes
+include footer-variable.pug
+footer.footer
+  nav.footer-nav
+    div.footer-logo
+      a(href="#" class='footer-logo__link')
+        img(src="../img/Cakes.jpg",
+        alt="Лого интернет магазина тортиков"
+        class='footer-logo__image'
+        )
+  ul.footer-nav__list
+    each item in mainNavItems
+      li.footer-nav__item
+        a(href='#'
+        class='footer-nav__link'
+        )= item
+  ul.footer-social
+    li.footer-social__item
+      span.visually-hidden Инстаграмм
+    li.footer-social__item
+      span.visually-hidden ВКонтакте
+  p.footer-copyright ©  2018 Cakes

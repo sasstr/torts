@@ -12,3 +12,15 @@ mixin articleCake(typeOfCakes, numberOfTypes, sourceImage, altImage, linkHref, l
       | вида
     img(src=sourceImage, alt=altImage)
     a(href=linkHref)= linkTitle
+
+mixin form(type, name, value, labelTitle='')
+  label= labelTitle
+    input(
+      type=type
+      name=name
+      value=value
+      )
+
+mixin orderInformation(title, text)
+  h3= title
+  p= text

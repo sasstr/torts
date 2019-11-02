@@ -124,7 +124,7 @@ gulp.task("server", function () {  // отслеживаем изменения 
 
   gulp.watch("source/js/main.js", gulp.series("js", "refresh"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/pug/*.pug", gulp.series("pug", "refresh"));
+  gulp.watch("source/pug/**/*.pug", gulp.series("pug", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });

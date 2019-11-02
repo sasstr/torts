@@ -1,9 +1,14 @@
-header
-  nav
-    div
-      a(href="#")
-        img(src="../img/Cakes.jpg", alt="Лого интернет магазина тортиков")
-    ul
-      -  const listOfNavItems = ["Наши торты", "Индивидуальный заказ", "отзывы", "о нас", "плашка как заказать", "контакты"]
-      each item in listOfNavItems
-        li= item
+include header-variable.pug
+header.header
+  nav.header__nav
+    div.header__logo
+      a(href="#" class='header__logo-link')
+        img(src="../img/Cakes.jpg",
+          alt="Лого интернет магазина тортиков"
+          class='header__logo-image'
+          )
+    ul.header__nav-list
+      each item in mainNavItems
+        li.header__nav-item
+          a(href='#' class='header__nav-link')= item
+  p.header__phone +7 906 899 92 96
