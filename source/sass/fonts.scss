@@ -1,21 +1,65 @@
 @font-face {
   font-style: normal;
   font-weight: normal;
-  font-family: "Open Sans";
+  font-family: "Circe";
   font-display: swap;
   src:
-    local("Open Sans"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+    local("Circe"),
+    url("../fonts/Circe.woff2") format("woff2"),
+    url("../fonts/Circe.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: bold;
-  font-family: "Open Sans";
+  font-family: "CirceBold";
   font-display: swap;
   src:
-    local("Open Sans Bold"),
-    url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
+    local("CirceBold"),
+    url("../fonts/CirceBold.woff2") format("woff2"),
+    url("../fonts/CirceBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  font-family: "CirceLight";
+  font-display: swap;
+  src:
+    local("CirceLight"),
+    url("../fonts/CirceLight.woff2") format("woff2"),
+    url("../fonts/CirceLight.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PlayfairDisplay-Regular";
+  font-display: swap;
+  src:
+    local("PlayfairDisplay-Regular"),
+    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "PlayfairDisplay-Bold";
+  font-display: swap;
+  src:
+    local("PlayfairDisplay-Bold"),
+    url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PlayfairDisplay-Italic";
+  font-display: swap;
+  src:
+    local("PlayfairDisplay-Italic"),
+    url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
 }

@@ -1,11 +1,12 @@
 .DS_Store
 .idea
 .vscode
+*.zip
 *.ai
 *.log
 *.pdf
 *.psd
-*.sublime*
+*.sublime
 node_modules/
 npm-debug.*
 source/css/*.css

@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+
+  min-height: 160px;
+  width: 1220px;
+  padding: 38px 73px 100px;
+
+  background-color: #e8e8e8;
+}
+
+.footer-nav__list {
+  display: flex;
+
+  list-style: none;
+}
+
+.footer-nav__item {
+  padding: 0 22px 0;
+}
+
+.footer-nav__link {
+  color: #2d2829;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.66px;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-social__item
